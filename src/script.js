@@ -60,7 +60,7 @@ const colors = ['#ff4d4d', '#4dff88', '#4db8ff', '#ff4dff', '#ffff4d', '#ffa64d'
 let colorIndex = 0;
 
 document.addEventListener('click', (e) => {
-    if (e.target.closest('#controls') || e.target.closest('#disclaimer')) return;
+    if (e.target.closest('#controls') || e.target.closest('#disclaimer') || e.target.closest('#info')) return;
 
     const newObj = document.createElement('div');
     newObj.className = 'space-object';
@@ -70,7 +70,7 @@ document.addEventListener('click', (e) => {
 
     const size = Math.floor(Math.random() * 20) + 10;
     
-    const distance = Math.floor(Math.random() * 250) + 150;
+    const distance = Math.floor(Math.random() * 250) + 200;
     
     const startAngle = Math.random() * 360;
 
